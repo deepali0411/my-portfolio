@@ -1,0 +1,46 @@
+.container {
+    box-sizing: border-box;
+  padding: 1.6rem 12rem;
+  background-color: rgba(25, 23, 53, 0.8);
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 8rem;
+  .download {
+    display: flex;
+    justify-content: center;
+    margin: 4rem;
+    .link {
+        color: inherit;
+        text-decoration: none;
+    padding: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.1rem solid #623686;
+    background-color: #623686;
+    width: fit-content;
+    font-weight: 600;
+    border-radius: 0.4rem;
+    }
+  }
+  .image {
+    width: 100rem;
+  }
+}
+
+@media screen and (max-width: 1178px) {
+  .container {
+      padding: 1.6rem;
+      padding-top: 8rem;
+      .image {
+        width: 70rem;
+      }
+  }
+}
+@media screen and (max-width: 716px) {
+  .container {
+      .image {
+        width: inherit;
+      }
+  }
+}

@@ -1,0 +1,106 @@
+.container {
+  box-sizing: border-box;
+  padding: 1.6rem 12rem;
+  background-color: rgba(25, 23, 53, 0.8);
+  min-height: 100vh;
+  .upper {
+    display: flex;
+    align-items: center;
+    margin-top: 6rem;
+    min-height: 60vh;
+    justify-content: space-between;
+    .about {
+      text-align: left;
+      .heading {
+        font-size: 2.8rem;
+        font-weight: 600;
+      }
+      .text {
+        margin: 3.2rem 0;
+        line-height: 3.2rem;
+        font-size: 1.8rem;
+        span {
+          color: #c770f0;
+        }
+      }
+    }
+    .aboutImage {
+      border-radius: 1.2rem;
+      width: 40rem;
+      box-shadow: rgba(175, 31, 241, 0.25) 0 0 100px 0;
+    }
+  }
+}
+
+.techStackContainer {
+  text-align: center;
+  margin: 2rem 0;
+  .heading {
+    font-size: 3.2rem;
+    font-weight: 600;
+  }
+  .techStack {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1.6rem 0;
+    gap: 2rem;
+    justify-content: center;
+    .card {
+      font-size: 4rem;
+      width: 15rem;
+      height: 10rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 0.1rem solid rgba(200, 137, 230, 0.635);
+      border-radius: 0.8rem;
+      box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137);
+    }
+  }
+}
+.toolStackContainer {
+  text-align: center;
+  margin: 6rem 0 0 2rem;
+  .heading {
+    font-size: 3.2rem;
+    font-weight: 600;
+  }
+  .toolStack {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1.6rem 0;
+    gap: 2rem;
+    justify-content: center;
+    .card {
+      font-size: 4rem;
+      width: 15rem;
+      height: 10rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 0.1rem solid rgba(200, 137, 230, 0.635);
+      border-radius: 0.8rem;
+      box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137);
+    }
+  }
+}
+
+@media screen and (max-width: 1178px) {
+  .container {
+    padding: 1.6rem;
+    .upper {
+      .aboutImage {
+        width: 30rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 716px) {
+  .container {
+    .upper {
+        flex-direction: column;
+        margin-bottom: 3.2rem;
+    }
+    
+  }
+}

@@ -1,0 +1,129 @@
+.container {
+  box-sizing: border-box;
+  padding: 1.6rem 12rem;
+  background-color: rgba(25, 23, 53, 0.8);
+  padding-top: 6rem;
+  .upper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 3.2rem;
+    font-weight: 600;
+    min-height: 95vh;
+    .leftText {
+      text-align: left;
+    }
+    .greeting {
+      margin: 2.2rem 0;
+    }
+    .name {
+      margin: 2.2rem 0;
+      font-size: 4rem;
+      span {
+        color: #c770f0;
+      }
+    }
+    .title {
+      margin: 4.8rem 0;
+      color: #c770f0;
+      font-weight: 700;
+    }
+    .rightImage {
+      box-shadow: rgba(199, 112, 240, 0.25) 0 0 100px 0;
+      margin-right: 8rem;
+      border-radius: 1.2rem;
+    }
+  }
+  .lower {
+    display: flex;
+    justify-content: space-between;
+    .introduction {
+      text-align: left;
+      max-width: 70rem;
+      .heading {
+        font-size: 4rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+      }
+      .text {
+        margin: 3.6rem 0;
+        font-size: 2rem;
+        font-style: italic;
+        div {
+          margin: 2rem 0;
+          span {
+            color: #c770f0;
+          }
+        }
+      }
+    }
+    .myImage {
+      margin-right: 8rem;
+      box-shadow: rgba(199, 112, 240, 0.25) 0 0 100px 0;
+    }
+  }
+  .mediaContainer {
+    margin: 4rem;
+    .socialMedia {
+      margin: 4rem 0 2rem;
+      font-size: 3.2rem;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    .apps {
+      .mediaLink {
+        text-decoration: none;
+        margin: 2rem;
+        padding: 0.8rem;
+        background-color: #fff;
+        border: 0.1rem solid #fff;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1178px) {
+  .container {
+    padding: 6rem 1.6rem 1.6rem;
+
+    .upper {
+        .rightImage  {
+            margin: 1.6rem;
+        }
+    }
+    .lower {
+        .myImage  {
+            margin: 1.6rem;
+        }
+    }
+  }
+}
+@media screen and (max-width: 716px) {
+  .container {
+    .upper {
+        flex-direction: column;
+        font-size: 2.4rem;
+        min-height: auto;
+        .name {
+          font-size: 3.2rem;
+        }
+        .rightImage  {
+            margin: 1.6rem;
+        }
+    }
+    .lower {
+      margin-top: 3.2rem;
+        flex-direction: column;
+        .introduction {
+          .heading {
+            font-size: 2.4rem;
+          }
+        }
+        .myImage  {
+            margin: 1.6rem;
+        }
+    }
+  }
+}

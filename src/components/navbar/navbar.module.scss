@@ -1,0 +1,87 @@
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 1.6rem 12rem;
+    background-color: rgba(27, 26, 46);
+    position: fixed;
+    .heading {
+        font-size: 2.8rem;
+        font-weight: 600;
+        color: #c770f0;
+        .drLink {
+            color: inherit;
+            text-decoration: none;
+        }
+        .icon {
+            display: none;
+        }
+    }
+    .navPage {
+        list-style: none;
+        display: flex;
+        gap: 4rem;
+        align-items: center;
+        font-size: 2rem;
+        font-weight: 500;
+        li {
+            .link {
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                color: inherit;
+                gap: 4px;
+            }
+            .link:focus {
+                color: #deb9ee;
+                font-weight: 700;
+            }
+
+            .button {
+                font-size: 2rem;
+                color: #fff;
+                background-color: rgba(147, 76, 206, 0.37);
+                border: 0.1rem solid rgb(98, 54, 134);
+                border-radius: 0.4rem;
+                padding: 0.4rem 0.8rem;
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                &:hover {
+                    background-color: #a24dd386
+                }
+            }
+        }
+    } 
+}
+
+@media screen and (max-width: 1178px) {
+    .container {
+        padding: 1.6rem;
+    }
+}
+@media screen and (max-width: 716px) {
+    .container {
+        padding: 1.6rem;
+        flex-direction: column;
+        width: 100%;
+        .heading {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .icon {
+                display: block;
+                cursor: pointer;
+            }
+        }
+        .navPage {
+            flex-direction: column;
+        }
+        .notExpanded {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,86 @@
+.container {
+  box-sizing: border-box;
+  padding: 1.6rem 12rem;
+  background-color: rgba(25, 23, 53, 0.8);
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 8rem;
+  .heading {
+    font-size: 3.6rem;
+    margin: 2rem;
+    font-weight: 700;
+    span {
+      color: #c770f0;
+    }
+  }
+  .projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    .cardContainer {
+      width: 30rem;
+      border: 1px solid rgba(0, 0, 0, 0.125);
+      box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459);
+      padding: 1.6rem;
+      border-radius: 0.4rem;
+      .image {
+        border-radius: 0.4rem;
+      }
+      .title {
+        margin: 2rem 0;
+        font-size: 2rem;
+        font-weight: 600;
+      }
+      .text {
+        text-align: justify;
+      }
+      .buttons {
+        display: flex;
+        margin: 2rem 0;
+        gap: 2rem;
+        justify-content: center;
+        .link {
+          text-decoration: none;
+          color: #fff;
+          background-color: rgba(147, 76, 206, 0.37);
+          border: 0.1rem solid rgb(98, 54, 134);
+          border-radius: 0.4rem;
+          padding: 0.4rem 0.8rem;
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          height: 3.6rem;
+          width: 8rem;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1178px) {
+  .container {
+    padding: 1.6rem;
+    padding-top: 8rem;
+  }
+}
+@media screen and (max-width: 1064px) {
+  .container {
+    .projects {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+@media screen and (max-width: 720px) {
+  .container {
+    .projects {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .cardContainer {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
